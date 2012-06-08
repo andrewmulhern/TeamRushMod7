@@ -9,7 +9,7 @@
 }
 
 rect:hover {
-  stroke: blue;
+  stroke: #000;
   stroke-width:2;
 
 }
