@@ -8,6 +8,12 @@
   stroke: #ccc;
 }
 
+rect:hover {
+  stroke: blue;
+  stroke-width:2;
+
+}
+
 .month {
   fill: none;
   stroke: #000;
