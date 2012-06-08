@@ -1,0 +1,32 @@
+https://www.google.com/search?pz=1&cf=all&ned=us&hl=en&tbm=nws&gl=us&as_q=economy&as_occt=any&as_drrb=b&as_mindate=6%2F6%2F12&as_maxdate=6%2F6%2F12&tbs=cdr%3A1%2Ccd_min%3A6%2F6%2F12%2Ccd_max%3A6%2F6%2F12&authuser=0
+
+
+		//var url = "test1.php?topic=" + topic + "&date=" + newsDate;
+		/*var url = "http://www.google.com/?query=test";
+		d3.select("#dialog")
+		.attr("title", event.childNodes[0].firstChild.nodeValue);
+		//.selectAll("p").html("<iframe src='" + url + "' frameborder='0' height='400' width='675'></iframe> ");
+
+		$.get(url, function(data) {
+		  d3.select("#dialog").selectAll("p").html(data);
+
+		});
+
+
+		$( "#dialog" ).dialog({ minWidth: 700, minHeight: 400 });*/
+
+
+
+/*var testData = [ {date:"2012-04-02",count:188}, {date:"2012-04-03",count:3919}, {date:"2012-04-04",count:3813}, {date:"2012-04-05",count:4678}, {date:"2012-04-06",count:3485}, {date:"2012-04-07",count:2122}, {date:"2012-04-08",count:2008}, {date:"2012-04-09",count:3592}, {date:"2012-04-10",count:4004}, {date:"2012-04-11",count:3219}, {date:"2012-04-12",count:3685}, {date:"2012-04-13",count:2782}, {date:"2012-04-14",count:2264}, {date:"2012-04-15",count:2431}, {date:"2012-04-16",count:3950}, {date:"2012-04-17",count:4298}, {date:"2012-04-18",count:4560}, {date:"2012-04-19",count:4282}, {date:"2012-04-20",count:3706}, {date:"2012-04-21",count:2300}, {date:"2012-04-22",count:2431}, {date:"2012-04-23",count:3737}, {date:"2012-04-24",count:3697}, {date:"2012-04-25",count:4751}, {date:"2012-04-26",count:4601}, {date:"2012-04-27",count:3649}, {date:"2012-04-28",count:2674}, {date:"2012-04-29",count:2726}, {date:"2012-04-30",count:3835}, {date:"2012-05-01",count:4025}, {date:"2012-05-10",count:39465}, {date:"2012-05-10",count:39465}, {date:"2012-05-10",count:39465}, {date:"2012-05-10",count:39465}, {date:"2012-05-10",count:39465}, {date:"2012-05-10",count:39465}, {date:"2012-05-10",count:39465}, {date:"2012-05-10",count:39465}, {date:"2012-05-11",count:4078}, {date:"2012-05-12",count:3150}, {date:"2012-05-13",count:3443}, {date:"2012-05-14",count:4823}, {date:"2012-05-15",count:4944}, {date:"2012-05-16",count:4346}, {date:"2012-05-17",count:4272}, {date:"2012-05-18",count:5501}, {date:"2012-05-19",count:3336}, {date:"2012-05-20",count:2482}, {date:"2012-05-21",count:3416}, {date:"2012-05-22",count:4647}, {date:"2012-05-23",count:4474}, {date:"2012-05-24",count:3959}, {date:"2012-05-25",count:3770}, {date:"2012-05-26",count:2237}, {date:"2012-05-27",count:2359}, {date:"2012-05-28",count:2909}, {date:"2012-05-29",count:4308}, {date:"2012-05-30",count:4127}, {date:"2012-06-01",count:5345}, {date:"2012-06-02",count:2953}, {date:"2012-06-03",count:2920}, {date:"2012-06-04",count:4243}, {date:"2012-06-05",count:4498}, {date:"2012-06-06",count:4292} ]; */
+
+//console.log(testData);
+
+/*var testing = new Array();
+testData.forEach(function(test) {
+	testing = testing.concat(test.count);
+});*/
+
+
+/*$(function() {
+	$( "#dialog" ).dialog();
+});*/
