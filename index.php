@@ -115,7 +115,7 @@ $heatMap = getDateCountByTag($hashtag);
 	</head>
 	<body>
 
-		<form action="test.php" method="GET">
+		<form action=index.php" method="GET">
 			Enter hashtag #<input type="text" name="hashtag"/>
 		</form>
 
@@ -125,7 +125,7 @@ $heatMap = getDateCountByTag($hashtag);
 		<?php echo createJSArray($heatMap); ?>
 		<?php echo createJSDomain($heatMap, $hashtag); ?>
 
-		<script type="text/javascript" src="js/heatmap.js.bak"></script>
+		<script type="text/javascript" src="js/heatmap.js"></script>
 
 		<div id="dialog">
 			<p></p>
