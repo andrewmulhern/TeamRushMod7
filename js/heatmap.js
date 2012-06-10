@@ -15,9 +15,9 @@ function popup(event, topic){
 
 
 var margin = {top: 5, right: 20, bottom: 20, left: 140},
-    width = 250 - margin.right - margin.left, // width
-    height = 1350 - margin.top - margin.bottom, // height
-    cellSize = 25; // cell size
+    width = 300 - margin.right - margin.left, // width
+    height = 2200 - margin.top - margin.bottom, // height
+    cellSize = 40; // cell size
 
 var day = d3.time.format("%w"),
     week = d3.time.format("%U"),
@@ -48,62 +48,62 @@ svg.append("text")
 
 //Months, each height manually adjusted via the number between the two + sign - Tze
 svg.append("text")
-    .attr("transform", "translate(-6," + 60 + ")rotate(-90)")
+    .attr("transform", "translate(-6," + 100 + ")rotate(-90)")
     .attr("text-anchor", "middle")
     .text("Jan");
 
 svg.append("text")
-    .attr("transform", "translate(-6," + 160 + ")rotate(-90)")
+    .attr("transform", "translate(-6," + 260 + ")rotate(-90)")
     .attr("text-anchor", "middle")
     .text("Feb");
 
 svg.append("text")
-    .attr("transform", "translate(-6," + 260 + ")rotate(-90)")
+    .attr("transform", "translate(-6," + 420 + ")rotate(-90)")
     .attr("text-anchor", "middle")
     .text("Mar");
 
 svg.append("text")
-    .attr("transform", "translate(-6," + 385 + ")rotate(-90)")
+    .attr("transform", "translate(-6," + 620 + ")rotate(-90)")
     .attr("text-anchor", "middle")
     .text("Apr");
 
 svg.append("text")
-    .attr("transform", "translate(-6," + 485 + ")rotate(-90)")
+    .attr("transform", "translate(-6," + 780 + ")rotate(-90)")
     .attr("text-anchor", "middle")
     .text("May");
 
 svg.append("text")
-    .attr("transform", "translate(-6," + 585 + ")rotate(-90)")
+    .attr("transform", "translate(-6," + 940 + ")rotate(-90)")
     .attr("text-anchor", "middle")
     .text("Jun");
 
 svg.append("text")
-    .attr("transform", "translate(-6," + 715 + ")rotate(-90)")
+    .attr("transform", "translate(-6," + 1140 + ")rotate(-90)")
     .attr("text-anchor", "middle")
     .text("Jul");
 
 svg.append("text")
-    .attr("transform", "translate(-6," + 815 + ")rotate(-90)")
+    .attr("transform", "translate(-6," + 1300 + ")rotate(-90)")
     .attr("text-anchor", "middle")
     .text("Aug");
 
 svg.append("text")
-    .attr("transform", "translate(-6," + 915 + ")rotate(-90)")
+    .attr("transform", "translate(-6," + 1500 + ")rotate(-90)")
     .attr("text-anchor", "middle")
     .text("Sep");
 
 svg.append("text")
-    .attr("transform", "translate(-6," + 1040 + ")rotate(-90)")
+    .attr("transform", "translate(-6," + 1660 + ")rotate(-90)")
     .attr("text-anchor", "middle")
     .text("Oct");
 
 svg.append("text")
-    .attr("transform", "translate(-6," + 1140 + ")rotate(-90)")
+    .attr("transform", "translate(-6," + 1820 + ")rotate(-90)")
     .attr("text-anchor", "middle")
     .text("Nov");
 
 svg.append("text")
-    .attr("transform", "translate(-6," + 1240 + ")rotate(-90)")
+    .attr("transform", "translate(-6," + 2020 + ")rotate(-90)")
     .attr("text-anchor", "middle")
     .text("Dec");
 

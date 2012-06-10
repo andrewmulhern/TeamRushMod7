@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ee713a40-8a2f-4999-9e0a-afa13c04b066" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/heatmap.css" afterPath="$PROJECT_DIR$/css/heatmap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/heatmap.js" afterPath="$PROJECT_DIR$/js/heatmap.js" />
     </list>
     <ignored path="TeamRushMod7.iws" />
@@ -45,28 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="legend.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/legend.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="10" selection-end="232" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="heatmap.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="heatmap.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/heatmap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="2" selection-start="96" selection-end="96" vertical-scroll-proportion="0.059760958">
+            <state line="4" column="2" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heatmap.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="heatmap.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/heatmap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="264" column="21" selection-start="7884" selection-end="7884" vertical-scroll-proportion="-25.44">
+            <state line="105" column="45" selection-start="3369" selection-end="3369" vertical-scroll-proportion="1.3509316">
               <folding />
             </state>
           </provider>
@@ -91,8 +80,9 @@
         <option value="$PROJECT_DIR$/oldcode.txt" />
         <option value="$PROJECT_DIR$/legend.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/js/heatmap.js" />
         <option value="$PROJECT_DIR$/css/heatmap.css" />
+        <option value="$PROJECT_DIR$/Old/oldcode.txt" />
+        <option value="$PROJECT_DIR$/js/heatmap.js" />
       </list>
     </option>
   </component>
@@ -144,6 +134,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="TeamRushMod7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeamRushMod7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeamRushMod7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Old" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -310,7 +314,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaning up project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding legend" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -327,6 +331,7 @@
     <MESSAGE value="Adding day hovers" />
     <MESSAGE value="Rotated the calendar so that it now reads downward" />
     <MESSAGE value="Cleaning up project" />
+    <MESSAGE value="Adding legend" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -342,13 +347,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Old/oldcode.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="2" selection-start="3367" selection-end="3367" vertical-scroll-proportion="0.7114026">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/colorbrewer.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="12" selection-start="538" selection-end="544" vertical-scroll-proportion="0.0">
@@ -356,7 +354,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/legend.php">
+    <entry file="file://$PROJECT_DIR$/Old/legend.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="10" selection-end="232" vertical-scroll-proportion="0.0">
           <folding />
@@ -370,16 +368,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/heatmap.js">
+    <entry file="file://$PROJECT_DIR$/css/heatmap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="264" column="21" selection-start="7884" selection-end="7884" vertical-scroll-proportion="-25.44">
+        <state line="4" column="2" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/heatmap.css">
+    <entry file="file://$PROJECT_DIR$/Old/oldcode.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="96" selection-end="96" vertical-scroll-proportion="0.059760958">
+        <state line="122" column="0" selection-start="5217" selection-end="5217" vertical-scroll-proportion="0.8183653">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/heatmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="45" selection-start="3369" selection-end="3369" vertical-scroll-proportion="1.3509316">
           <folding />
         </state>
       </provider>
