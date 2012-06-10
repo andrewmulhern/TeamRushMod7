@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ee713a40-8a2f-4999-9e0a-afa13c04b066" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/heatmap.js" afterPath="$PROJECT_DIR$/js/heatmap.js" />
     </list>
     <ignored path="TeamRushMod7.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -314,7 +313,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding legend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sizing cells" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -332,6 +331,7 @@
     <MESSAGE value="Rotated the calendar so that it now reads downward" />
     <MESSAGE value="Cleaning up project" />
     <MESSAGE value="Adding legend" />
+    <MESSAGE value="Sizing cells" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
