@@ -149,6 +149,7 @@ if(empty($heatMap)) {
 
 		<form action="index.php" method="GET">
 			Enter hashtag #<input type="text" name="hashtag"/>
+            <input type="submit" value="Go!"/>
 		</form>
 
 		<h1>Tweet HeatMap for #<?php echo $hashtag; ?></h1>
