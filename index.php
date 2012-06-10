@@ -56,7 +56,7 @@ function getDateCountByTag($tag) {
 
 function createJSArray($data) {
 	$jsArray = "\t<script type=\"text/javascript\">\n";
-	$jsArray .= "\t\t\t\tvar testData = [ ";
+	$jsArray .= "\t\t\t\tvar dynamicData = [ ";
 	foreach ($data as $d) {
 		$date = $d["date"];
 		$count = $d["count"];
@@ -104,7 +104,6 @@ $heatMap = getDateCountByTag($hashtag);
 //echo min($heatMap);
 
 ?>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -115,7 +114,7 @@ $heatMap = getDateCountByTag($hashtag);
 	</head>
 	<body>
 
-		<form action="test.php" method="GET">
+		<form action="index.php" method="GET">
 			Enter hashtag #<input type="text" name="hashtag"/>
 		</form>
 
@@ -125,11 +124,7 @@ $heatMap = getDateCountByTag($hashtag);
 		<?php echo createJSArray($heatMap); ?>
 		<?php echo createJSDomain($heatMap, $hashtag); ?>
 
-		<script type="text/javascript" src="js/heatmap.js"></script>
-
-		<div id="dialog">
-			<p></p>
-		</div>
+		<script type="text/javascript" src="js/heatmap.js"></script> <!-- Main JS file containing visualization code - AJM -->
 
 	</body>
 </html>

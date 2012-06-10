@@ -109,9 +109,9 @@ $heatMap = getDateCountByTag($hashtag);
 <html>
 	<head>
 		<title>TweetMap</title>
-		<script type="text/javascript" src="js/d3.v2.js"></script>
-		<link type="text/css" rel="stylesheet" href="css/colorbrewer.css"/>
-		<link type="text/css" rel="stylesheet" href="css/heatmap.css"/>
+		<script type="text/javascript" src="../js/d3.v2.js"></script>
+		<link type="text/css" rel="stylesheet" href="../css/colorbrewer.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/heatmap.css"/>
 	</head>
 	<body>
 
@@ -125,7 +125,7 @@ $heatMap = getDateCountByTag($hashtag);
 		<?php echo createJSArray($heatMap); ?>
 		<?php echo createJSDomain($heatMap, $hashtag); ?>
 
-		<script type="text/javascript" src="js/heatmap.js"></script>
+		<script type="text/javascript" src="../js/heatmap.js.bak"></script>
 
 		<div id="dialog">
 			<p></p>
