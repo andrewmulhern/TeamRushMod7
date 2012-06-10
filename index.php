@@ -102,8 +102,8 @@ function createJSDomain($data, $hashtag) {
     }
     $legendData .= " ]\n";
 
-    echo $min . " " . $max ." " . $range;
-    dumpArray($rangeArray);
+    //echo $min . " " . $max ." " . $range;
+    //dumpArray($rangeArray);
 
 	$jsDomain = "\t<script type=\"text/javascript\">\n";
 	$jsDomain .= "\t\t\t\tvar topic = '" . $hashtag . "';\n";

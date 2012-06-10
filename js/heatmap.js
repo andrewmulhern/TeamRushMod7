@@ -119,8 +119,10 @@ var rect = svg.selectAll("rect.day")
     .attr("y", function(d) { return week(d) * cellSize; })
     .datum(format);
 
+
 rect.append("title")
     .text(function(d) { return d; });
+
 
 svg.selectAll("path.month")
     .data(function(d) { return d3.time.months(new Date(d, 0, 1), new Date(d + 1, 0, 1)); })
@@ -163,7 +165,7 @@ function monthPath(t0) {
       + "Z";
 }
 
-
+// Legen, wait for it...dary legend - AJM
 var legend = d3.select("#legend")
     .append("svg:svg")
     .attr("width", 200)
