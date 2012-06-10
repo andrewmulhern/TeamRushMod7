@@ -15,10 +15,10 @@ function foo(event, topic){
 
 //console.log(minValue);
 
-var margin = {top: 19, right: 20, bottom: 20, left: 19},
-    width = 1600 - margin.right - margin.left, // width
-    height = 250 - margin.top - margin.bottom, // height
-    cellSize = 25; // cell size
+var margin = {top: 5, right: 20, bottom: 20, left: 140},
+    width = 250 - margin.right - margin.left, // width
+    height = 1600 - margin.top - margin.bottom, // height
+    cellSize = 15; // cell size
 
 var day = d3.time.format("%w"),
     week = d3.time.format("%U"),
@@ -40,12 +40,78 @@ var svg = d3.select("#chart").selectAll("svg")
     .attr("height", height + margin.top + margin.bottom)
     .attr("class", "RdYlGn")
   .append("g")
-    .attr("transform", "translate(" + (margin.left + (width - cellSize * 53) / 2) + "," + (margin.top + (height - cellSize * 7) / 2) + ")");
+    .attr("transform", "translate(" + (margin.left + (width - (cellSize+10) * 7) / 2) + "," + (margin.top + (height - (cellSize+10) * 60) / 2) + ")");
 
+
+//append the year - Tze
 svg.append("text")
-    .attr("transform", "translate(-6," + cellSize * 3.5 + ")rotate(-90)")
+    .attr("transform", "translate(20," + -5 + ")rotate(0)")
     .attr("text-anchor", "middle")
     .text(String);
+
+
+//Months, each height manually adjusted via the number between the two + sign - Tze
+svg.append("text")
+    .attr("transform", "translate(-6," + 36 + ")rotate(-90)")
+    .attr("text-anchor", "middle")
+    .text("Jan");
+
+svg.append("text")
+    .attr("transform", "translate(-6," + 104 + ")rotate(-90)")
+    .attr("text-anchor", "middle")
+    .text("Feb");
+
+svg.append("text")
+    .attr("transform", "translate(-6," + 168 + ")rotate(-90)")
+    .attr("text-anchor", "middle")
+    .text("Mar");
+
+svg.append("text")
+    .attr("transform", "translate(-6," + 234 + ")rotate(-90)")
+    .attr("text-anchor", "middle")
+    .text("Apr");
+
+svg.append("text")
+    .attr("transform", "translate(-6," + 300 + ")rotate(-90)")
+    .attr("text-anchor", "middle")
+    .text("May");
+
+svg.append("text")
+    .attr("transform", "translate(-6," + 364 + ")rotate(-90)")
+    .attr("text-anchor", "middle")
+    .text("Jun");
+
+svg.append("text")
+    .attr("transform", "translate(-6," + 430 + ")rotate(-90)")
+    .attr("text-anchor", "middle")
+    .text("Jul");
+
+svg.append("text")
+    .attr("transform", "translate(-6," + 496 + ")rotate(-90)")
+    .attr("text-anchor", "middle")
+    .text("Aug");
+
+svg.append("text")
+    .attr("transform", "translate(-6," + 562 + ")rotate(-90)")
+    .attr("text-anchor", "middle")
+    .text("Sep");
+
+svg.append("text")
+    .attr("transform", "translate(-6," + 630 + ")rotate(-90)")
+    .attr("text-anchor", "middle")
+    .text("Oct");
+
+svg.append("text")
+    .attr("transform", "translate(-6," + 690 + ")rotate(-90)")
+    .attr("text-anchor", "middle")
+    .text("Nov");
+
+svg.append("text")
+    .attr("transform", "translate(-6," + 756 + ")rotate(-90)")
+    .attr("text-anchor", "middle")
+    .text("Dec");
+
+
 
 var rect = svg.selectAll("rect.day")
     .data(function(d) { return d3.time.days(new Date(d, 0, 1), new Date(d + 1, 0, 1)); })
@@ -53,8 +119,8 @@ var rect = svg.selectAll("rect.day")
     .attr("class", "day")
     .attr("width", cellSize)
     .attr("height", cellSize)
-    .attr("x", function(d) { return week(d) * cellSize; })
-    .attr("y", function(d) { return day(d) * cellSize; })
+    .attr("x", function(d) { return day(d) * cellSize; })
+    .attr("y", function(d) { return week(d) * cellSize; })
     .datum(format);
 
 rect.append("title")
@@ -93,7 +159,7 @@ rect.filter(function(d) { return d in data; })
 
 
 //});
-
+/*
 function monthPath(t0) {
   var t1 = new Date(t0.getFullYear(), t0.getMonth() + 1, 0),
       d0 = +day(t0), w0 = +week(t0),
@@ -103,4 +169,24 @@ function monthPath(t0) {
       + "H" + w1 * cellSize + "V" + (d1 + 1) * cellSize
       + "H" + (w1 + 1) * cellSize + "V" + 0
       + "H" + (w0 + 1) * cellSize + "Z";
+}
+
+*/
+
+//rotating?? - Tze, can't figure out how the month sort out,
+//but monthPath use to draw monthe and the bacl lines in between?
+
+function monthPath(t0) {
+  var t1 = new Date(t0.getFullYear(), t0.getMonth() + 1, 0),
+      d0 = +day(t0), w0 = +week(t0),
+      d1 = +day(t1), w1 = +week(t1);
+  return "M" + (d0) * cellSize + "," + (w0 + 1) * cellSize
+      + "V" + w0 * cellSize 
+      + "H" + 7 * cellSize
+      + "V" + w1 * cellSize 
+      + "H" + (d1 + 1) * cellSize
+      + "V" + (w1 + 1) * cellSize 
+      + "H" + 0
+      + "V" + (w0 + 1) * cellSize 
+      + "Z";
 }

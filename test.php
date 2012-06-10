@@ -125,7 +125,7 @@ $heatMap = getDateCountByTag($hashtag);
 		<?php echo createJSArray($heatMap); ?>
 		<?php echo createJSDomain($heatMap, $hashtag); ?>
 
-		<script type="text/javascript" src="js/heatmap.js"></script>
+		<script type="text/javascript" src="js/heatmap.js.bak"></script>
 
 		<div id="dialog">
 			<p></p>
