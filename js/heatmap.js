@@ -182,7 +182,7 @@ legend.selectAll("rect")
     .attr("x", 0)
     .attr("y", function(d) { return 20* (d.id); })
     .attr("height", 20)
-    .attr("width", 95)
+    .attr("width", 105)
     .attr("class", function(d) { return "day q" + (d.id-1) + "-10"; });
 
 legend.selectAll("text")
