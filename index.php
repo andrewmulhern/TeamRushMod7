@@ -83,20 +83,27 @@ function createJSDomain($data, $hashtag) {
     $min = min($combined);
     $max = max($combined);
 
-    $range = ($max-$min)/11;
+    if($min==$max) {
+        echo "<h2>No data for #$hashtag :(</h2>";
+        return;
+    }
+
+    $range = ceil(($max-$min)/10);
 
     $counter = 1;
-    $rangeArray = range($min,($max-$range),$range);
+    $rangeArray = range($min,$max-1,$range);
     $legendData = "\t\t\t\tvar legendData = [ {id:0, range:'No Data'}, ";
     foreach($rangeArray as $n) {
         $legendData .= "{id:$counter, range:'" . strval(ceil($n)) . " - " . strval(floor($n+$range)) . "'}";
         $counter++;
-        if($counter <= 10) {
+        if($counter < 11) {
             $legendData .= ", ";
         }
     }
     $legendData .= " ]\n";
 
+    echo $min . " " . $max ." " . $range;
+    dumpArray($rangeArray);
 
 	$jsDomain = "\t<script type=\"text/javascript\">\n";
 	$jsDomain .= "\t\t\t\tvar topic = '" . $hashtag . "';\n";
