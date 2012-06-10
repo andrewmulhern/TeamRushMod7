@@ -46,3 +46,88 @@ function monthPath(t0) {
 }
 
 */
+
+
+
+/*var legend = d3.select("#legend")
+    .append("svg:svg")
+    .attr("width", 200)
+    .attr("height", 500)
+    .attr("class", "RdBu");
+
+
+
+for(var x = 0; x<10; x++){
+    legend.append("svg:rect")
+        .attr("x", 0)
+        .attr("y", 25*x)
+        .attr("height", 25)
+        .attr("width", 150)
+        .attr("class", "day q" + x + "-10");
+
+    legend.selectAll("text")
+        .append("svg:text")
+        .attr("x", "25" )
+        .attr("y",25*x+5 )
+        .attr("text-anchor", "middle")
+        .text("testing")
+        .attr("fill", "red");
+}*/
+
+/*
+var foo = [{year: 2006, books: 54},
+    {year: 2007, books: 43},
+    {year: 2008, books: 41},
+    {year: 2009, books: 44},
+    {year: 2010, books: 35}];
+
+var barWidth = 40;
+var width = (barWidth + 10) * foo.length;
+var height = 200;
+
+var x = d3.scale.linear().domain([0, foo.length]).range([0, width]);
+var y = d3.scale.linear().domain([0, d3.max(foo, function(datum) { return datum.books; })]).
+    rangeRound([0, height]);
+
+// add the canvas to the DOM
+var barDemo = d3.select("#legend").
+    append("svg:svg").
+    attr("width", width).
+    attr("height", height);
+
+barDemo.selectAll("rect").
+    data(foo).
+    enter().
+    append("svg:rect").
+    attr("x", function(datum, index) { return x(index); }).
+    attr("y", function(datum) { return height - y(datum.books); }).
+    attr("height", function(datum) { return y(datum.books); }).
+    attr("width", barWidth).
+    attr("fill", "#2d578b");
+
+barDemo.selectAll("text").
+    data(foo).
+    enter().
+    append("svg:text").
+    attr("x", function(datum, index) { return x(index) + barWidth; }).
+    attr("y", function(datum) { return height - y(datum.books); }).
+    attr("dx", -barWidth/2).
+    attr("dy", "1.2em").
+    attr("text-anchor", "middle").
+    text(function(datum) { return datum.books;}).
+    attr("fill", "white");
+*/
+
+
+
+
+var testing = [{id:0, range:"asdf-asdf"},
+    {id:1, range:"asdf-asdf"},
+    {id:2, range:"asdf-asdf"},
+    {id:3, range:"asdf-asdf"},
+    {id:4, range:"asdf-asdf"},
+    {id:5, range:"asdf-asdf"},
+    {id:6, range:"asdf-asdf"},
+    {id:7, range:"asdf-asdf"},
+    {id:8, range:"asdf-asdf"},
+    {id:9, range:"asdf-asdf"}];
