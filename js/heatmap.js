@@ -28,6 +28,7 @@ var color = d3.scale.quantize()
     .domain([minValue, maxValue])  // Sets color ranges specific to the data, defined in PHP - AJM
     .range(d3.range(10)); // Sets number of color gradients - AJM
 
+
 var svg = d3.select("#chart").selectAll("svg")
     .data(d3.range(2012, 2013))
   .enter().append("svg")
@@ -35,8 +36,7 @@ var svg = d3.select("#chart").selectAll("svg")
     .attr("height", height + margin.top + margin.bottom)
     .attr("class", "RdBu")
   .append("g")
-    // Add margin to CSS as to not get long trailing whitespace - AJM
-    //.attr("transform", "translate(" + (margin.left + (width - (cellSize+10) * 7) / 2) + "," + (margin.top + (height - (cellSize+10) * 60) / 2) + ")");
+    .attr("transform","translate(15,15)");
 
 
 //append the year - Tze
@@ -162,3 +162,120 @@ function monthPath(t0) {
       + "V" + (w0 + 1) * cellSize 
       + "Z";
 }
+
+
+/*var legend = d3.select("#legend")
+    .append("svg:svg")
+    .attr("width", 200)
+    .attr("height", 500)
+    .attr("class", "RdBu");
+
+
+
+for(var x = 0; x<10; x++){
+    legend.append("svg:rect")
+        .attr("x", 0)
+        .attr("y", 25*x)
+        .attr("height", 25)
+        .attr("width", 150)
+        .attr("class", "day q" + x + "-10");
+
+    legend.selectAll("text")
+        .append("svg:text")
+        .attr("x", "25" )
+        .attr("y",25*x+5 )
+        .attr("text-anchor", "middle")
+        .text("testing")
+        .attr("fill", "red");
+}*/
+
+/*
+var foo = [{year: 2006, books: 54},
+    {year: 2007, books: 43},
+    {year: 2008, books: 41},
+    {year: 2009, books: 44},
+    {year: 2010, books: 35}];
+
+var barWidth = 40;
+var width = (barWidth + 10) * foo.length;
+var height = 200;
+
+var x = d3.scale.linear().domain([0, foo.length]).range([0, width]);
+var y = d3.scale.linear().domain([0, d3.max(foo, function(datum) { return datum.books; })]).
+    rangeRound([0, height]);
+
+// add the canvas to the DOM
+var barDemo = d3.select("#legend").
+    append("svg:svg").
+    attr("width", width).
+    attr("height", height);
+
+barDemo.selectAll("rect").
+    data(foo).
+    enter().
+    append("svg:rect").
+    attr("x", function(datum, index) { return x(index); }).
+    attr("y", function(datum) { return height - y(datum.books); }).
+    attr("height", function(datum) { return y(datum.books); }).
+    attr("width", barWidth).
+    attr("fill", "#2d578b");
+
+barDemo.selectAll("text").
+    data(foo).
+    enter().
+    append("svg:text").
+    attr("x", function(datum, index) { return x(index) + barWidth; }).
+    attr("y", function(datum) { return height - y(datum.books); }).
+    attr("dx", -barWidth/2).
+    attr("dy", "1.2em").
+    attr("text-anchor", "middle").
+    text(function(datum) { return datum.books;}).
+    attr("fill", "white");
+*/
+
+var testing = [{id:0, range:"asdf-asdf"},
+    {id:1, range:"asdf-asdf"},
+    {id:2, range:"asdf-asdf"},
+    {id:3, range:"asdf-asdf"},
+    {id:4, range:"asdf-asdf"},
+    {id:5, range:"asdf-asdf"},
+    {id:6, range:"asdf-asdf"},
+    {id:7, range:"asdf-asdf"},
+    {id:8, range:"asdf-asdf"},
+    {id:9, range:"asdf-asdf"}];
+
+var legend = d3.select("#legend")
+    .append("svg:svg")
+    .attr("width", 200)
+    .attr("height", 500)
+    .attr("class", "RdBu")
+    .append("g")
+    .attr("transform","translate(15,15)");
+
+
+
+
+legend.selectAll("rect")
+    .data(legendData)
+    .enter()
+    .append("svg:rect")
+    .attr("x", 0)
+    .attr("y", function(d) { return 20* d.id; })
+    .attr("height", 20)
+    .attr("width", 95)
+    .attr("class", function(d) { return "day q" + d.id + "-10"; });
+
+legend.selectAll("text")
+    .data(legendData)
+    .enter()
+    .append("svg:text")
+    .attr("x", 10)
+    .attr("y", function(d) { return 20* d.id; })
+    .attr("dy", "1.2em")
+    .text(function(d) { return d.range;})
+    .attr("fill", "white");
+
+legend.append("text")
+    .attr("transform", "translate(20," + -5 + ")rotate(0)")
+    .attr("text-anchor", "middle")
+    .text("Legend")

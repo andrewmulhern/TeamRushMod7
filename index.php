@@ -79,10 +79,30 @@ function createJSDomain($data, $hashtag) {
 		$combined[] = $d["count"];
 	}
 
+
+    $min = min($combined);
+    $max = max($combined);
+
+    $range = ($max-$min)/11;
+
+    $counter = 0;
+    $rangeArray = range($min,($max-$range),$range);
+    $legendData = "\t\t\t\tvar legendData = [ ";
+    foreach($rangeArray as $n) {
+        $legendData .= "{id:$counter, range:'" . strval(ceil($n)) . " - " . strval(floor($n+$range)) . "'}";
+        $counter++;
+        if($counter < 10) {
+            $legendData .= ", ";
+        }
+    }
+    $legendData .= " ]\n";
+
+
 	$jsDomain = "\t<script type=\"text/javascript\">\n";
 	$jsDomain .= "\t\t\t\tvar topic = '" . $hashtag . "';\n";
 	$jsDomain .= "\t\t\t\tvar minValue = " . min($combined) . ";\n";
 	$jsDomain .= "\t\t\t\tvar maxValue = " . max($combined) . ";\n";
+    $jsDomain .= $legendData;
 	$jsDomain .= "\t\t\t</script>\n";
 
 	return $jsDomain;
@@ -119,7 +139,10 @@ $heatMap = getDateCountByTag($hashtag);
 		</form>
 
 		<h1>Tweet HeatMap for #<?php echo $hashtag; ?></h1>
-		<div id="chart"></div>
+        <div id="wrapper">
+            <div id="chart"></div>
+            <div id="legend"></div>
+        </div>
 
 		<?php echo createJSArray($heatMap); ?>
 		<?php echo createJSDomain($heatMap, $hashtag); ?>
