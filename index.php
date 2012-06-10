@@ -85,13 +85,13 @@ function createJSDomain($data, $hashtag) {
 
     $range = ($max-$min)/11;
 
-    $counter = 0;
+    $counter = 1;
     $rangeArray = range($min,($max-$range),$range);
-    $legendData = "\t\t\t\tvar legendData = [ ";
+    $legendData = "\t\t\t\tvar legendData = [ {id:0, range:'No Data'}, ";
     foreach($rangeArray as $n) {
         $legendData .= "{id:$counter, range:'" . strval(ceil($n)) . " - " . strval(floor($n+$range)) . "'}";
         $counter++;
-        if($counter < 10) {
+        if($counter <= 10) {
             $legendData .= ", ";
         }
     }
@@ -123,6 +123,12 @@ $heatMap = getDateCountByTag($hashtag);
 //dumpArray($heatMap);
 //echo min($heatMap);
 
+if(empty($heatMap)) {
+    $noData = true;
+}
+
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -144,10 +150,18 @@ $heatMap = getDateCountByTag($hashtag);
             <div id="legend"></div>
         </div>
 
+        <?php if(!$noData){ ?>
+
 		<?php echo createJSArray($heatMap); ?>
 		<?php echo createJSDomain($heatMap, $hashtag); ?>
 
 		<script type="text/javascript" src="js/heatmap.js"></script> <!-- Main JS file containing visualization code - AJM -->
+
+        <?php } else { ?>
+
+        <h2>No data for <?php echo "#$hashtag"; ?> :(</h2>
+
+        <?php } ?>
 
 	</body>
 </html>

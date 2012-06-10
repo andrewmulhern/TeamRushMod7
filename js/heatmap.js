@@ -173,25 +173,43 @@ var legend = d3.select("#legend")
     .attr("transform","translate(15,15)");
 
 
+/*legend.append("svg:rect")
+    .attr("x", 0)
+    .attr("y", 0)
+    .attr("height", 20)
+    .attr("width", 95)
+    .attr("fill", "white");
+
+legend.append("svg:text")
+    .attr("x", 10)
+    .attr("y", 0)
+    .attr("dy", "1.2em")
+    .text("No Data")
+    .attr("fill", "black");
+*/
+
 legend.selectAll("rect")
     .data(legendData)
     .enter()
     .append("svg:rect")
     .attr("x", 0)
-    .attr("y", function(d) { return 20* d.id; })
+    .attr("y", function(d) { return 20* (d.id); })
     .attr("height", 20)
     .attr("width", 95)
-    .attr("class", function(d) { return "day q" + d.id + "-10"; });
+    .attr("class", function(d) { return "day q" + (d.id-1) + "-10"; });
 
 legend.selectAll("text")
     .data(legendData)
     .enter()
     .append("svg:text")
     .attr("x", 10)
-    .attr("y", function(d) { return 20* d.id; })
+    .attr("y", function(d) { return 20* (d.id); })
     .attr("dy", "1.2em")
     .text(function(d) { return d.range;})
-    .attr("fill", "white");
+    .attr("fill", function(d) {
+            if(d.id==0) { return "black"};
+            return "white";
+        ;});
 
 legend.append("text")
     .attr("transform", "translate(20," + -5 + ")rotate(0)")
