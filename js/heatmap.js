@@ -29,7 +29,7 @@ var color = d3.scale.quantize()
     //.domain([-.05, .05])
     //.domain([2000, 5500])
     .domain([minValue, maxValue])
-    .range(d3.range(11));
+    .range(d3.range(10));
 
 //console.log(color);
 
@@ -38,7 +38,7 @@ var svg = d3.select("#chart").selectAll("svg")
   .enter().append("svg")
     .attr("width", width + margin.right + margin.left)
     .attr("height", height + margin.top + margin.bottom)
-    .attr("class", "RdYlGn")
+    .attr("class", "RdBu")
   .append("g")
     .attr("transform", "translate(" + (margin.left + (width - cellSize * 53) / 2) + "," + (margin.top + (height - cellSize * 7) / 2) + ")");
 
@@ -77,7 +77,7 @@ var data = d3.nest()
 //console.log(data);
 
 rect.filter(function(d) { return d in data; })
-.attr("class", function(d) { return "day q" + color(data[d]) + "-11";  })
+.attr("class", function(d) { return "day q" + color(data[d]) + "-10";  })
 .attr("onclick", "foo(this, topic);")
 .select("title")
 .text(function(d) { return "Date: " + d + ", Count: " + data[d]; });
