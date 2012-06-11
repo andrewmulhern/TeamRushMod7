@@ -153,6 +153,7 @@ if(empty($heatMap)) {
 		</form>
 
 		<h1>Tweet HeatMap for #<?php echo $hashtag; ?></h1>
+        <p>Please click on a day to view associated news stories!</p>
         <div id="wrapper">
             <div id="chart"></div>
             <div id="legend"></div>
