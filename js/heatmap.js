@@ -108,7 +108,6 @@ svg.append("text")
     .text("Dec");
 
 
-
 var rect = svg.selectAll("rect.day")
     .data(function(d) { return d3.time.days(new Date(d, 0, 1), new Date(d + 1, 0, 1)); })
   .enter().append("rect")
@@ -145,6 +144,16 @@ rect.filter(function(d) { return d in data; })
 
 // CSS file provides border highlighting for mouseover hover, easier than doing so in SVG - AJM
 
+
+svg.selectAll("text")
+    .data(function(d) { console.log(d); return d3.time.days(new Date(d, 0, -12), new Date(d + 1, 0, 1)); })
+    .enter()
+    .append("svg:text")
+    .attr("x", function(d) { return day(d) * cellSize; })
+    .attr("y", function(d) { return week(d) * cellSize; })
+    .attr("dy", "1.2em")
+    .text(function(d) { return d.getDate() })
+    .attr("fill", "black");
 
 
 //rotating?? - Tze, can't figure out how the month sort out,
