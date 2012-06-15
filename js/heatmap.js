@@ -36,15 +36,50 @@ var svg = d3.select("#chart").selectAll("svg")
     .attr("height", height + margin.top + margin.bottom)
     .attr("class", "RdBu")
   .append("g")
-    .attr("transform","translate(15,15)");
+    .attr("transform","translate(15,30)");
 
 
 //append the year - Tze
 svg.append("text")
-    .attr("transform", "translate(20," + -5 + ")rotate(0)")
+    .attr("transform", "translate(20," + -20 + ")rotate(0)")
     .attr("text-anchor", "middle")
     .text(String);
 
+// Add weeks - AJM
+svg.append("text")
+    .attr("transform", "translate(20," + -5 + ")rotate(0)")
+    .attr("text-anchor", "middle")
+    .text("Sun");
+
+svg.append("text")
+    .attr("transform", "translate(60," + -5 + ")rotate(0)")
+    .attr("text-anchor", "middle")
+    .text("Mon");
+
+svg.append("text")
+    .attr("transform", "translate(100," + -5 + ")rotate(0)")
+    .attr("text-anchor", "middle")
+    .text("Tues");
+
+svg.append("text")
+    .attr("transform", "translate(140," + -5 + ")rotate(0)")
+    .attr("text-anchor", "middle")
+    .text("Wed");
+
+svg.append("text")
+    .attr("transform", "translate(177," + -5 + ")rotate(0)")
+    .attr("text-anchor", "middle")
+    .text("Thurs");
+
+svg.append("text")
+    .attr("transform", "translate(220," + -5 + ")rotate(0)")
+    .attr("text-anchor", "middle")
+    .text("Fri");
+
+svg.append("text")
+    .attr("transform", "translate(260," + -5 + ")rotate(0)")
+    .attr("text-anchor", "middle")
+    .text("Sat");
 
 //Months, each height manually adjusted via the number between the two + sign - Tze
 svg.append("text")
@@ -146,7 +181,7 @@ rect.filter(function(d) { return d in data; })
 
 
 svg.selectAll("text")
-    .data(function(d) { console.log(d); return d3.time.days(new Date(d, 0, -12), new Date(d + 1, 0, 1)); })
+    .data(function(d) { console.log(d); return d3.time.days(new Date(d, 0, -19), new Date(d + 1, 0, 1)); })
     .enter()
     .append("svg:text")
     .attr("x", function(d) { return day(d) * cellSize; })
@@ -202,12 +237,13 @@ legend.selectAll("text")
     .attr("y", function(d) { return 20* (d.id); })
     .attr("dy", "1.2em")
     .text(function(d) { return d.range;})
-    .attr("fill", function(d) {
-            if(d.id==0) { return "black"};
-            return "white";
+    .attr("fill", function(d) { // Create gradient - AJM
+            if(d.id==0 || d.id==6 || d.id==5) { return "#313131"};
+            if(d.id==8 || d.id==7 || d.id==4 || d.id==3) { return "#3B3B3B"};
+            return "#D7D7D7";
         ;});
 
 legend.append("text")
-    .attr("transform", "translate(20," + -5 + ")rotate(0)")
+    .attr("transform", "translate(52," + -5 + ")rotate(0)")
     .attr("text-anchor", "middle")
-    .text("Legend")
+    .text("Tweets per Day"); //Make legend title more meaningful - AJM

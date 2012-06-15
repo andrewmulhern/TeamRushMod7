@@ -1,0 +1,38 @@
+body, html {
+    margin:0;
+    padding:0;
+    color: #000000;
+    background: #BBBBBB;
+}
+
+#wrapper {
+    margin: 30px auto 30px  auto;
+    width: 90%;
+    height: 100%;
+}
+
+#col1 {
+    background: #FFFFFF;
+    float: left;
+    width:47%;
+    border: solid 2px #525252;
+}
+
+#mid {
+    width:5%;
+    float:right;
+    text-align:center;
+    font-size:30px;
+}
+
+#col2 {
+    background: #FFFFFF;
+    float: right;
+    width:47%;
+    border: solid 2px #525252;
+
+}
+
+#bottom {
+    clear:both;
+}
