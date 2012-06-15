@@ -46,4 +46,4 @@ svg.selectAll("text")
     .attr("fill", "black");
 ```
 
-* 3) Created versus setup to compare two hashtags on one page (see index.php
+* 3) Created versus setup to compare two hashtags on one page (see index.php)
