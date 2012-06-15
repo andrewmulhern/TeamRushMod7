@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>TweetMap</title>
+		<title>TweetMap - Versus!</title>
         <link type="text/css" rel="stylesheet" href="css/main.css"/>
 	</head>
 	<body>
