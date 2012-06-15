@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee713a40-8a2f-4999-9e0a-afa13c04b066" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery-1.7.2.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="TeamRushMod7.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="33" selection-start="58" selection-end="58" vertical-scroll-proportion="0.070202805">
+            <state line="26" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="-16.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="59" selection-start="832" selection-end="832" vertical-scroll-proportion="0.40601504">
               <folding />
             </state>
           </provider>
@@ -54,12 +63,12 @@
         <option value="$PROJECT_DIR$/legend.php" />
         <option value="$PROJECT_DIR$/css/heatmap.css" />
         <option value="$PROJECT_DIR$/Old/oldcode.txt" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/main.php" />
         <option value="$PROJECT_DIR$/js/heatmap.js" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -346,11 +355,6 @@
         <state line="4" column="2" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="59" selection-start="480" selection-end="480" vertical-scroll-proportion="0.13446215" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/colorbrewer.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="633" selection-end="816" vertical-scroll-proportion="0.0">
@@ -388,7 +392,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="58" selection-end="58" vertical-scroll-proportion="0.070202805">
+        <state line="26" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="-16.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="59" selection-start="832" selection-end="832" vertical-scroll-proportion="0.40601504">
           <folding />
         </state>
       </provider>
