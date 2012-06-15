@@ -137,12 +137,15 @@ if(empty($heatMap)) {
 
 
 ?>
-
-
-        <script type="text/javascript" src="js/d3.v2.js"></script>
-        <link type="text/css" rel="stylesheet" href="css/colorbrewer.css"/>
-        <link type="text/css" rel="stylesheet" href="css/heatmap.css"/>
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TweetMap</title>
+		<script type="text/javascript" src="js/d3.v2.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/colorbrewer.css"/>
+		<link type="text/css" rel="stylesheet" href="css/heatmap.css"/>
+	</head>
+	<body>
 
 		<form action="original-heatmap.php" method="GET">
 			Enter hashtag #<input type="text" name="hashtag"/>
@@ -151,7 +154,7 @@ if(empty($heatMap)) {
 
 		<h1>Tweet HeatMap for #<?php echo $hashtag; ?></h1>
         <p>Please click on a day to view associated news stories!</p>
-        <div id="viz">
+        <div id="wrapper">
             <div id="chart"></div>
             <div id="legend"></div>
         </div>
@@ -169,4 +172,6 @@ if(empty($heatMap)) {
 
         <?php } ?>
 
+	</body>
+</html>
 
