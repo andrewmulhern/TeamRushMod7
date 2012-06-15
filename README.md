@@ -14,6 +14,6 @@ GitHub repo @ https://github.com/andrewmulhern/TeamRushMod7
 Module 7.3 Modification Change Log
 ===============================
 
-1) Added dynamic gradient text to legend and change title for better usability
-2) Added day numbers and day of the week headings to the calendar grid
-3) Created versus setup to compare two hashtags on one page
+* 1) Added dynamic gradient text to legend and change title for better usability
+* 2) Added day numbers and day of the week headings to the calendar grid
+* 3) Created versus setup to compare two hashtags on one page
