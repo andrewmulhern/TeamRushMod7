@@ -11,7 +11,7 @@ Live demo @ http://bongo.ischool.drexel.edu/~ajm/TeamRushMod7/
 GitHub repo @ https://github.com/andrewmulhern/TeamRushMod7
 
 
-Mod 7.3 Modification Change Log
+Module 7.3 Modification Change Log
 ===============================
 
 1) Added dynamic gradient text to legend and change title for better usability
