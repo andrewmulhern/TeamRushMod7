@@ -25,19 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="-16.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="2" selection-start="782" selection-end="782" vertical-scroll-proportion="0.40601504">
+            <state line="48" column="76" selection-start="1731" selection-end="1731" vertical-scroll-proportion="0.86466163">
               <folding />
             </state>
           </provider>
@@ -383,23 +374,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/heatmap.js">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="14" selection-start="4770" selection-end="4770" vertical-scroll-proportion="0.4086781">
+        <state line="26" column="0" selection-start="669" selection-end="669" vertical-scroll-proportion="-16.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/js/heatmap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="-16.25">
+        <state line="182" column="0" selection-start="5717" selection-end="6099" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="2" selection-start="782" selection-end="782" vertical-scroll-proportion="0.40601504">
+        <state line="48" column="76" selection-start="1731" selection-end="1731" vertical-scroll-proportion="0.86466163">
           <folding />
         </state>
       </provider>
